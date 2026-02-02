@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <svg viewBox="0 0 1000 400" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="200" cy="200" r="90" fill="none" stroke="white" stroke-width="14"/>
+                    <rect x="150" y="170" width="22" height="50" fill="white" rx="2"/>
+                    <rect x="177" y="150" width="22" height="70" fill="#C8A550" rx="2"/>
+                    <rect x="204" y="125" width="22" height="95" fill="#529B3C" rx="2"/>
+                    <path d="M 155 195 L 175 215 L 230 160" fill="none" stroke="#003366" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="250" y="250" width="18" height="85" fill="white" rx="3" transform="rotate(45 259 292)"/>
+                    <text x="350" y="220" font-family="'Arial Black', Arial, sans-serif" font-size="100" font-weight="900" fill="white">Accu</text>
+                    <text x="620" y="220" font-family="'Arial Black', Arial, sans-serif" font-size="100" font-weight="900" fill="#C8A550">stock</text>
+                    <text x="470" y="280" font-family="Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="10" fill="white">SOLUTIONS</text>
+                    <line x1="380" y1="270" x2="455" y2="270" stroke="#C8A550" stroke-width="3"/>
+                    <line x1="805" y1="270" x2="880" y2="270" stroke="#C8A550" stroke-width="3"/>
+                </svg>
+            </div>
+            <ul class="links">
+                <li><a href="{{url_for('route.index')}}">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#indusries">Industries</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="{{url_for('route.index')}}">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#indusries">Industries</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+    </header>
+    <script>
+        const toggleBtn=document.querySelector('.toggle_btn')
+        const toggleBtnIcon=document.querySelector('.toggle_btn i')
+        const dropDownMenu=document.querySelector('.dropdown_menu')
+        const signupBtn=document.querySelector('.action_btn')
+
+        toggleBtn.onclick=function(){
+            dropDownMenu.classList.toggle('open')
+
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList=isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    {% block content %}{% endblock %}
+    <footer>
+        <div class="footerBottom">
+            <p>Copyright &copy;2025; Designed by <span class="designer">Mob Empire</span></p>
+        </div>
+    </footer>
+</body>
+</html>

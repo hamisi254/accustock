@@ -1,0 +1,195 @@
+{% extends "base.html" %}{% block head %}{{super()}}
+<link 
+    rel="stylesheet" 
+    href="{{url_for('static', filename='home.css')}}"
+/>
+{% endblock %}
+{% block content %}
+<main>
+    <section id="home">
+        <section class="hero">
+            <h1>Trusted Accuracy in Every Stock Count</h1>
+            <p>Professional stocktaking and inventory management services that protect your business value</p>
+        </section>
+    </section>
+    <section id="about">
+        <div class="about_us">
+            <div class="container">
+                <div class="row">
+                    <div class="flex">
+                        <h2>About Us</h2>
+                        <h3>Discover everything about us</h3>
+                        <p>Accustock Solutions is a professional stocktaking and inventory management service provider dedicated to helping 
+                businesses maintain accurate, reliable, and transparent stock records. We specialize in physical stock counts, 
+                inventory reconciliation, variance analysis, and reporting across retail, wholesale, pharmacies, warehouses, and 
+                service-based operations.
+                        </p>
+                        <a href="#" class="learn_btn">LEARN MORE</a>
+                    </div>
+                    <div class="flex">
+                        <img src="static/images/aboutUs.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="service">
+        <div class="container">
+            <div id="service-section">
+                <h2>Services</h2>
+                <p id="paragraph">these are the services which our applcation provides to users.
+                </p>
+                <div class="cards">
+                    <div class="card">
+                        <i class="fa-solid fa-scanner-gun"></i>
+                        <div class="content">
+                            <h3>Physical stocktaking</h3>
+                            <p>Comprehensive physical inventory counts conducted with precision and thoroughness.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                        <div class="content">
+                            <h3>Inventory Reconciliation</h3>
+                            <p>Matching physical stock with system records to identify discrepancies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <div class="content">
+                            <h3>Variance Analysis & Reporting</h3>
+                            <p>Detailed reports highlighting stock variances and their potential causes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-arrows-spin"></i>
+                        <div class="content">
+                            <h3>Cycle Counts & Spot Checks</h3>
+                            <p>Regular inventory verification to maintain ongoing accuracy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-shop"></i>
+                        <div class="content">
+                            <h3>Inventory Process Review</h3>
+                            <p>Advisory services to improve your inventory management systems.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-image-portrait"></i>
+                        <div class="content">
+                            <h3>Accustock Inventory System</h3>
+                            <p>Our proprietary inventory management system for streamlined operations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="industries">
+        <div class="contan">
+            <h2 id="industries">Industries We Serve</h2>
+            <div class="industries-list">
+                <div class="industry-item">Supermarkets & Retail Stores</div>
+                <div class="industry-item">Pharmacies & Chemists</div>
+                <div class="industry-item">Warehouses & Distribution Centers</div>
+                <div class="industry-item">Small & Medium Enterprises (SMEs)</div>
+                <div class="industry-item">Hospitality & Service Outlets</div>
+                <div class="industry-item">Automotive/Garage Supplies</div>
+            </div>
+        </div>
+    </section>
+    <div class="contan">
+        <section class="section why-choose">
+            <h2>Why Choose Accustock Solutions</h2>
+            <ul>
+                <li>Independent and unbiased stock verification</li>
+                <li>Systematic and well documented approach</li>
+                <li>Confidential handling of business data</li>
+                <li>Minimal disruption to operations</li>
+                <li>Clear, actionable stock reports</li>
+                <li>Reliable support for audits and financial reviews</li>
+            </ul>
+        </section>
+    </div>
+    <section class="section">
+            <h2>Our Approach</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto;">
+                We follow a structured process that includes planning, physical counting, reconciliation, variance investigation, 
+                reporting, and recommendations. Each assignment is customized to the client's inventory system, size, and business 
+                environment to ensure accuracy and efficiency.
+            </p>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="content">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contain">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon">
+                            <b></b><i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>00100 Nairobi</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <b></b><i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>0757880309</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <b></b><i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>accustocksolutions@gmail.com</p>
+                        </div>
+                    </div>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></i></li>
+                        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></i></li>
+                    </ul>
+                </div>
+                <div class="contactForm">
+                    <form action="https://formsubmit.co/ed1eb2f940880f3c4c7a2e4c4464eb0a" method="post">
+                        <h2>Send message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="fullnanme" required>
+                            <span>FullName</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="email" required>
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required></textarea>
+                            <span>Type your message...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
